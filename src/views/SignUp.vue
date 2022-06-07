@@ -13,6 +13,13 @@
                     </div>
 
                     <div class="field">
+                        <label>Email</label>
+                        <div class="control">
+                            <input type="email" class="input" v-model="email">
+                        </div>
+                    </div>
+
+                    <div class="field">
                         <label>Contraseña</label>
                         <div class="control">
                             <input type="password" class="input" v-model="password">
@@ -53,6 +60,7 @@ export default {
     data() {
         return {
             username: '',
+            email: '',
             password: '',
             password2: '',
             errors: []
@@ -66,6 +74,9 @@ export default {
             this.errors = []
             if (this.username === '') {
                 this.errors.push('Falta agregar usuario')
+            }
+            if (this.email === '') {
+                this.errors.push('Falta agregar email')
             }
             if (this.password === '') {
                 this.errors.push('La contraseña es muy corta')

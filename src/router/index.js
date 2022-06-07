@@ -13,6 +13,7 @@ import LogIn from '../views/LogIn.vue'
 import MyAccount from '../views/MyAccount.vue'
 import Checkout from '../views/Checkout.vue'
 import Success from '../views/Success.vue'
+import Offline from '../views/Offline.vue'
 
 
 const routes = [
@@ -71,6 +72,11 @@ const routes = [
         path: '/:category_slug/',
         name: 'Category',
         component: Category
+    },
+    {
+        path: '/offline',
+        name: 'Offline',
+        component: Offline
     },
 ]
 
