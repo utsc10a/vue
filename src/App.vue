@@ -31,9 +31,8 @@
                 </div>
 
                 <div class="navbar-end">
-                    <router-link to="/pc" class="navbar-item">PC</router-link>
                     <router-link to="/switch" class="navbar-item">Switch</router-link>
-                    <router-link to="/ps4" class="navbar-item">PS4</router-link>
+                    <router-link to="/ps5" class="navbar-item">PS5</router-link>
                     <router-link to="/xsx" class="navbar-item">XSX</router-link>
 
                     <div class="navbar-item">
@@ -65,9 +64,7 @@
             <router-view />
         </section>
 
-        <footer class="footer">
-            <p class="has-text-centered">Derechos reservados. Alley Videojuegos 2022</p>
-        </footer>
+        
     </div>
 </template>
 

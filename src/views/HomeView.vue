@@ -5,9 +5,6 @@
             <p class="title mb-6">
                 Bienvenido a Alley Videojuegos
             </p>
-            <p class="subtitle">
-                La mejor tienda de videojuegos retro en Mexico
-            </p>
         </div>
     </section>
 

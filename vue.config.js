@@ -1,4 +1,5 @@
 const { defineConfig } = require('@vue/cli-service')
+const manifestJSON = require('./public/manifest.json')
 module.exports = defineConfig({
   transpileDependencies: true,
   
@@ -7,6 +8,9 @@ module.exports = defineConfig({
     themeColor: "#ffffff",
     background_color: "#ffffff",
     display: "standalone",
+    msTileColor: '#000000',
+    appleMobileWebAppCapable: 'yes',
+    appleMobileWebAppStatusBarStyle: 'black',
     icons: {
       favicon32: 'img/icons/favicon-32x32.png',
       favicon16: 'img/icons/favicon-16x16.png',
