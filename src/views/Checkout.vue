@@ -197,6 +197,19 @@ export default {
                     price: item.product.price * item.quantity
                 }
                 items.push(obj)
+                const stockChanges = {
+                    'product': item.product.id,
+                    'stock': item.quantity,
+                }
+                await axios
+                .post(`/api/v1/stock-update/${item.product.id}`, stockChanges)
+                .then(response => {
+                    console.log("Stock cambio")
+                })
+                .catch(error => {
+                    this.errors.push('Algo salió mal en stock.')
+                    console.log(error)
+                })
             }
             const data = {
                 'first_name': this.first_name,
@@ -219,7 +232,8 @@ export default {
                     this.errors.push('Algo salió mal. Inténtalo de nuevo')
                     console.log(error)
                 })
-                this.$store.commit('setIsLoading', false)
+
+            this.$store.commit('setIsLoading', false)
         }
     },
     computed: {
