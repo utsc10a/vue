@@ -1,15 +1,14 @@
 <template>
     <div class="page-product">
         <div class="columns is-multiline">
-            <div class="column is-9">
-                <figure class="image mb-6">
+            <div class="column is-4">
+                <h1 class="title">{{ product.name }}</h1>
+                <figure class="image is-3by4 mb-6">
                     <img v-bind:src="product.get_image">
                 </figure>
-
-                <h1 class="title">{{ product.name }}</h1>
-
-                <p>{{ product.description }}</p>
             </div>
+
+            
 
             <div class="column is-3">
                 <h2 class="subtitle">Informacion</h2>
@@ -26,6 +25,11 @@
                         <a class="button is-dark" @click="addToCart">Al carrito</a>
                     </div>
                 </div>
+            </div>
+
+            <div class="column is-5">
+                <h1 class="subtitle">Descripcion</h1>
+                <p>{{ product.description }}</p>
             </div>
         </div>
     </div>
