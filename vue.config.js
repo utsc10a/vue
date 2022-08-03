@@ -5,6 +5,7 @@ module.exports = defineConfig({
   
   pwa: {
     name: "Alley Videojuegos",
+    start_url: "/",
     themeColor: "#7c4897",
     background_color: "#ffffff",
     display: "standalone",
