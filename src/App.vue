@@ -1,6 +1,6 @@
 <template>
     <div id="wrapper">
-        <nav class="navbar is-dark">
+        <nav class="navbar is-dark nav is-fixed-top">
             <div class="navbar-brand">
                 <router-link to="/" class="navbar-item"><strong>Alley Videojuegos</strong></router-link>
                 <a class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu" @click="showMobileMenu = !showMobileMenu">
@@ -29,7 +29,7 @@
                                 <router-link to="/sign-up" class="button is-light">Registro</router-link>
                             </template>
 
-                            <router-link to="/cart" class="button is-success">
+                            <router-link to="/cart" class="btn-cart">
                                 <span class="icon"><i class="fas fa-shopping-cart"></i></span>
                                 <span>Carrito {{ cartTotalLength }}</span>
                             </router-link>
@@ -46,7 +46,6 @@
         <section class="section">
             <router-view />
         </section>
-
         
     </div>
 </template>

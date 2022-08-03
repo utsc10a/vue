@@ -5,7 +5,7 @@ module.exports = defineConfig({
   
   pwa: {
     name: "Alley Videojuegos",
-    themeColor: "#ffffff",
+    themeColor: "#7c4897",
     background_color: "#ffffff",
     display: "standalone",
     msTileColor: '#000000',

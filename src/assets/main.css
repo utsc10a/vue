@@ -1,0 +1,112 @@
+body{
+    background-color: #fff;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+}
+.section{
+    margin-top: 3.25rem;
+    width: 100%;
+    height: 100%;
+}
+.banner {
+    width: 70vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+.banner .banner-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(720px * 4);
+}
+.banner .slide {
+    width: 720px;
+}
+.banner .slide img {
+    width: 100%;
+}
+.Switch{
+    background-color: rgba(238, 28, 37, 0.85);
+    color: #fff;
+    border-radius: 20px;
+    padding-top: 10px !important;
+    padding-bottom: 30px !important;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    height: 100px;
+}
+.Switch h2{
+    display: inline-flex;
+}
+.Xbox{
+    background-color: rgba(62, 125, 9, 0.85);
+    color: #fff;
+    border-radius: 20px;
+    padding-top: 10px !important;
+    padding-bottom: 30px !important;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    height: 100px;
+}
+.Xbox h2{
+    display: inline-flex;
+    font-size: 1.5rem !important;
+}
+.PS5{
+    background-color: rgba(11, 68, 148, 0.85);
+    color: #fff;
+    border-radius: 20px;
+    padding-top: 10px !important;
+    padding-bottom: 30px !important;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    height: 100px;
+}
+.PS5 h2{
+    display: inline-flex;
+}
+.imgSwitch{
+    background: url("../assets/Switch.png");
+    display: inline-flex;
+    float:right;
+    line-height: 0;
+    width: 80px;
+    height: 80px;
+}
+.imgXbox{
+    background: url("../assets/Xbox.png");
+    display: inline-flex;
+    float:right;
+    line-height: 0;
+    width: 80px;
+    height: 80px;
+}
+.imgPS5{
+    background: url("../assets/PS5.png");
+    display: inline-flex;
+    float:right;
+    line-height: 0;
+    width: 80px;
+    height: 80px;
+}
+.box{
+    border: 1px solid gray;
+}
+.box:hover{
+    border: 2px groove #D9647B;
+}
+.image{
+    padding: 10px;
+}
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-720px * 4));
+        transform: translateX(calc(-720px * 4));
+    }
+}

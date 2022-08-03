@@ -1,0 +1,58 @@
+$dark: #15161D;
+@import "~bulma/bulma";
+.hero.is-medium .hero-body {
+    padding: 3rem 3rem;
+}
+.add-product{
+    background: #ef233c;
+    color: #fff;
+    border-radius: 40px;
+    border: 2px solid transparent;
+}
+.add-product:hover{
+    background: #fff;
+    color: #D10024;
+    border-color: #D10024;
+    padding: 0px 30px 0px 30px;
+}
+.btn-cart{
+    background-color: #D33D2A;
+    color: #fff;
+    border-width: 1px;
+    cursor: pointer;
+    justify-content: center;
+    padding-bottom: calc(0.5em - 1px);
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: calc(0.5em - 1px);
+    text-align: center;
+    white-space: nowrap;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: none;
+    display: inline-flex;
+    line-height: 1.5;
+    font-size: 1rem;
+    height: 2.5em;
+    position: relative;
+    vertical-align: top;
+    margin-bottom: 0.5rem;
+}
+.btn-cart:hover{
+    color: #fff;
+}
+@media screen and (max-width: 1023px){
+    .navbar-menu {
+        background-color: #1E1F29;
+        box-shadow: 0 8px 16px rgb(10 10 10 / 10%);
+        padding: 0.5rem 0;
+    }
+    .navbar-item{
+        color: #fff;
+    }
+    a.navbar-item:hover{
+        background-color: #1e1f29;
+        color: #cc3b29;
+    }
+}

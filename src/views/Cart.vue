@@ -6,7 +6,8 @@
             </div>
 
             <div class="column is-12">
-                <table class="table is-fullwidth" v-if="cartTotalLength">
+                <div class="table-container">
+                    <table class="table" v-if="cartTotalLength">
                     <thead>
                         <tr>
                             <th>Producto</th>
@@ -24,9 +25,9 @@
                             v-bind:initialItem="item"
                             v-on:removeFromCart="removeFromCart" />
                     </tbody>
-                </table>
-
-                <p v-else>No tienes ningun producto en el carrito...</p>
+                    </table>
+                    <p v-else>No tienes ningun producto en el carrito...</p>
+                </div>
 
             </div>
 

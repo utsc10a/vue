@@ -2,15 +2,29 @@
   <div class="home">
     <section class="hero is-medium is-dark mb-6">
         <div class="hero-body has-text-centered">
-            <p class="title mb-6">
-                Bienvenido a Alley Videojuegos
-            </p>
+          <p class="title mb-6">Bienvenido a Alley Videojuegos</p>
+          <div class="banner">
+            <div class="banner-track">
+              <div class="slide">
+                <img src="../assets/1.png" alt="">
+              </div>
+              <div class="slide">
+                <img src="../assets/2.png" alt="">
+              </div>
+              <div class="slide">
+                <img src="../assets/3.png" alt="">
+              </div>
+              <div class="slide">
+                <img src="../assets/4.png" alt="">
+              </div>
+            </div>
+          </div>
         </div>
     </section>
 
     <div class="columns is-multiline">
       <div class="column is-12">
-          <h2 class="is-size-2 has-text-centered">Nuevos productos</h2>
+          <h2 class="is-size-2 has-text-centered title">Nuevos productos</h2>
       </div>
 
       <ProductBox 
