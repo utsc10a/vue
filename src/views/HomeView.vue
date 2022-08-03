@@ -3,22 +3,7 @@
     <section class="hero is-medium is-dark mb-6">
         <div class="hero-body has-text-centered">
           <p class="title mb-6">Bienvenido a Alley Videojuegos</p>
-          <div class="banner">
-            <div class="banner-track">
-              <div class="slide">
-                <img src="../assets/1.png" alt="">
-              </div>
-              <div class="slide">
-                <img src="../assets/2.png" alt="">
-              </div>
-              <div class="slide">
-                <img src="../assets/3.png" alt="">
-              </div>
-              <div class="slide">
-                <img src="../assets/4.png" alt="">
-              </div>
-            </div>
-          </div>
+          
         </div>
     </section>
 
